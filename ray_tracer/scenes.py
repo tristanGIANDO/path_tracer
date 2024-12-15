@@ -71,7 +71,8 @@ def batch_render(scene_content, config: RenderConfig, log_results: bool):
             image = denoise(image)
         timestamp = int(time.time())
         unique_id = f"{timestamp}-{uuid.uuid4()}"
-        output_file = Path("data") / f"{unique_id}.png"
+        # output_file = Path("data") / f"{unique_id}.png"
+        output_file = Path("data/output.png")
         output_file.parent.mkdir(parents=True, exist_ok=True)
         Image.fromarray((image * 255).astype(np.uint8)).save(output_file)
 

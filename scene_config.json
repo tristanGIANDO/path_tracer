@@ -1,0 +1,31 @@
+{
+    "earth": {
+        "type": "Sphere",
+        "center": [
+            0,
+            0,
+            1.5
+        ],
+        "radius": 1,
+        "color": [
+            0.0,
+            0.0,
+            0.0
+        ],
+        "reflection": 1.0,
+        "roughness": 0.0
+    },
+    "light1": {
+        "type": "Light",
+        "position": [
+            5,
+            10,
+            -10
+        ],
+        "intensity": [
+            1,
+            1,
+            1
+        ]
+    }
+}
